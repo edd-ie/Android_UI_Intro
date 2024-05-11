@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Skill Level:"
-        android:layout_above="@id/rad1"
+        android:layout_above="@id/rad"
         android:layout_alignStart="@id/input1"
         android:textColor="@color/black"
         android:id="@+id/txt2"
@@ -47,40 +47,40 @@
         android:layout_marginLeft="5dp"
         />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/chk1"
-        android:layout_alignStart="@id/input1"
-        android:text="Beginner"
-        android:id="@+id/rad1"
-        android:checked="false"
-        android:layout_marginTop="1dp"
-        />
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@id/chk1"
+       android:layout_alignStart="@id/input1"
+       android:id="@+id/rad"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/chk1"
-        android:layout_toRightOf="@id/rad1"
-        android:layout_marginLeft="25dp"
-        android:text="Intemediate"
-        android:id="@+id/rad2"
-        android:checked="false"
-        android:layout_marginTop="1dp"
-        />
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Beginner"
+           android:id="@+id/rb1"
+           android:checked="true"
+           />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/chk1"
-        android:layout_toRightOf="@id/rad2"
-        android:layout_marginLeft="25dp"
-        android:text="Advanced"
-        android:id="@+id/rad3"
-        android:checked="false"
-        android:layout_marginTop="1dp"
-        />
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Intermediate"
+           android:id="@+id/rb2"
+           android:layout_marginLeft="8dp"
+           />
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Expert"
+           android:id="@+id/rb3"
+           android:layout_marginLeft="8dp"
+           />
+
+   </RadioGroup>
 
     <CheckBox
         android:layout_width="wrap_content"
