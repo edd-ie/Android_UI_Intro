@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UI</string>
+    <string name="click_me">Click Me!</string>
+    <string name="hello_world">Intro to World Domination</string>
+    <string name="check_me">Do you agree to the terms and conditions?</string>
+
+</resources>
