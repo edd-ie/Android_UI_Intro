@@ -31,7 +31,6 @@
         android:textSize="32sp"
         android:textColor="@color/violet"
         android:id="@+id/txt1"
-
         />
 
     <TextView
@@ -44,7 +43,7 @@
         android:id="@+id/txt2"
         android:textSize="16sp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         />
 
    <RadioGroup
@@ -77,7 +76,7 @@
            android:layout_height="wrap_content"
            android:text="Expert"
            android:id="@+id/rb3"
-           android:layout_marginLeft="8dp"
+           android:layout_marginStart="8dp"
            />
 
    </RadioGroup>
@@ -102,6 +101,18 @@
         android:id="@+id/btn1"
         android:onClick="btnHandler"
     />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn1"
+        android:layout_marginBottom="-40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:max="100"
+        android:top="50dp" />
 
 
 </RelativeLayout>
